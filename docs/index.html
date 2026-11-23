@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Francisca Tupkeyi’s cybersecurity portfolio featuring SOC investigations, network analysis, and security governance coursework.">
+<title>Francisca Tupkeyi | Cybersecurity Portfolio</title>
+<style>
+:root { color-scheme: dark; --background: #0c1724; --panel: #152637; --text: #f4f7fb; --muted: #bfd0df; --accent: #8fe6cf; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--background); color: var(--text); font: 1.05rem/1.65 system-ui, sans-serif; }
+header, main, footer { width: min(70rem, 100% - 2.5rem); margin-inline: auto; }
+header, footer { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: space-between; align-items: center; padding-block: 1.3rem; }
+header { border-bottom: 1px solid #30465b; }
+nav { display: flex; flex-wrap: wrap; gap: .45rem 1.25rem; }
+a { color: var(--accent); text-underline-offset: .22em; }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
+section { padding-block: clamp(2rem, 5vw, 4rem); }
+.hero { border-bottom: 1px solid #30465b; }
+h1, h2, h3 { line-height: 1.12; margin: 0 0 .8rem; }
+h1 { font: 700 clamp(2.9rem, 8vw, 6rem)/1 Georgia, serif; letter-spacing: -.045em; }
+h2 { font-size: clamp(1.6rem, 4vw, 2.3rem); }
+h3 { font-size: 1.25rem; }
+p { max-width: 68ch; margin: 0 0 1.1rem; color: var(--muted); }
+.eyebrow { color: var(--accent); font-size: .91rem; font-weight: 650; letter-spacing: .04em; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 24rem), 1fr)); gap: 1rem; }
+article { padding: 1.5rem; background: var(--panel); border: 1px solid #30465b; border-radius: .85rem; }
+footer { border-top: 1px solid #30465b; color: var(--muted); }
+</style>
+</head>
+<body id="top">
+<header>
+<strong>Francisca Tupkeyi</strong>
+<nav aria-label="Portfolio navigation">
+<a href="#about">About Me</a><a href="#experience">Résumé / Experience</a><a href="#work">Work Examples</a><a href="#contact">Contact</a>
+</nav>
+</header>
+<main>
+<section class="hero" id="about" aria-labelledby="name">
+<p class="eyebrow">Cybersecurity portfolio</p>
+<h1 id="name">Francisca Tupkeyi</h1>
+<h2>About Me</h2>
+<p>I’m a cybersecurity student at Full Sail University, where I expect to complete my Bachelor of Science in Cybersecurity in December 2026. I hold an associate degree in Information Technology and am pursuing a career in security operations. In coursework and home labs, I’ve correlated packet captures and logs to build incident timelines, reviewed Windows sign-in events, and verified that vulnerability fixes worked by rescanning affected lab systems.</p>
+<a href="#work">Explore my work</a>
+</section>
+<section id="experience">
+<h2>Résumé / Experience</h2>
+<div class="grid">
+<article><h3>Education</h3><p>B.S. in Cybersecurity, Full Sail University<br>Expected December 2026</p><p>Associate degree in Information Technology</p></article>
+<article><h3>Technical skills</h3><p>Security event triage with Splunk and Windows Event Viewer. Network evidence analysis with Wireshark and Zeek. Vulnerability assessment and remediation verification with Nessus.</p><p>Coursework in access control, security planning, and security maturity assessment.</p></article>
+</div>
+</section>
+<section id="work">
+<h2>Work Examples</h2>
+<div class="grid">
+<article><p class="eyebrow">Incident investigation</p><h3>Web01 SOC Investigation</h3><p>In a simulated web server incident, I compared access logs with network evidence to reconstruct the timeline and assess recurring outbound TLS connections. My report documents the observed activity and identifies evidence needed to establish the scope.</p><a href="https://github.com/FinaSec/web01-soc-investigation/blob/main/report/Web01_Incident_Analysis.pdf">Read the incident report (PDF)</a></article>
+<article><p class="eyebrow">Security governance</p><h3>BSIMM Security Assessment</h3><p>Using an educational case scenario, I evaluated software security practices, identified gaps, and recommended improvements to governance, development, and deployment.</p><a href="https://github.com/FinaSec/BSIMM-Security-Assessment/blob/main/reports/BSIMM-Security-Assessment.pdf">Read the assessment (PDF)</a></article>
+</div>
+</section>
+<section id="contact"><h2>Contact</h2><p><a href="https://github.com/FinaSec">Francisca Tupkeyi on GitHub</a></p></section>
+</main>
+<footer><span>Francisca Tupkeyi</span><a href="#top">Back to top</a></footer>
+</body>
+</html>
